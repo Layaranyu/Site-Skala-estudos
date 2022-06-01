@@ -1,6 +1,11 @@
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 header{
-    background-color: rgb(236, 192, 220);
-    padding: auto;
+  background-image: linear-gradient(rgb(196, 109, 167), white);
+  padding: auto;
 }
 
 .logo{
@@ -15,11 +20,10 @@ nav{
     position: absolute;
     top: 2%;
     right: 03%;
-    }
+}
 nav li{
     display: inline;
-    padding-top: 2%;
-       
+    padding-top: 2%;  
 }
 nav a{
     text-transform: uppercase;
@@ -38,7 +42,7 @@ nav a:hover{
 .logotipo{
     display: inline;
     position: absolute;
-    right:65%;
+    right: 70%;
     top: 11.5%
 }
 
@@ -49,9 +53,11 @@ nav a:hover{
     position: absolute;
     right: 20%;
     top: 12%;
+    margin-right: 5%;
+    margin-left: 5%;
     width: 40% ;
 }
-.input-padrao{
+.padrao{
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -209,7 +215,7 @@ main a{
 .slider{
   margin: 0 auto;
   width: 400px;
-  height: 500px;
+  height: 430px;
   overflow: hidden;
 }
 
@@ -299,4 +305,117 @@ main a{
 }
 #radio3:checked ~.navigation .auto-btn3{
   background-color: blueviolet;
+}
+
+.box hr{
+  margin: 0 auto !important;
+  width: 30%;
+  background-color: #9b2c8e;
+  border-radius: none;
+  border-top: 1px dashed red;
+}
+
+.box .Lancamentos{
+  margin: 0 auto !important;
+  width: 30%;
+  border-radius: none;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 30px;
+  column-gap: 50px;
+  margin-bottom: 20px;
+
+}
+
+.container img{
+  height: 250px;
+  width: 250px;
+}
+.bloco-1{
+  height: 400px;
+  width: 270px;
+  text-align: center;
+  border: 2px solid rgb(230, 45, 183);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+
+button{
+  background-color: #f59eeb;
+  padding: 15px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  cursor: pointer; 
+  border-radius: 5px !important;
+  transition:1s all;
+  color: rgb(7, 8, 10);
+}
+
+button:hover{
+  transform: scale(1.2);
+  background-color: #f371d7;
+}
+
+
+.informacoes{
+  text-align: center;
+  font-weight: bold;
+  align-items: center;
+
+}
+
+.informacoes .Vegano{
+  width: 70%;
+  height: 400px;
+  border: 2px solid rgb(230, 45, 183);
+  border-radius: 20px;
+  margin-bottom: 25px;
+  
+}
+.informacoes.button{
+  margin-bottom: 50px;
+
+}
+.curvatura h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+.curvatura p{
+  text-align: center;
+  font: bold;
+  align-items: center;
+}
+.img-curvatura{
+  width: 80%;
+  margin-left:11%;
+}
+footer{
+  background-image: linear-gradient( white, rgb(196, 109, 167));
+  text-align: center;
+}
+  
+.skala{
+  width: 20%;
+  height:20%;
+}
+
+form,label form legend{
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.input-padrao{
+  width: 30%;
+  border-radius:10px;
 }
